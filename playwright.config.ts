@@ -8,14 +8,7 @@ export default defineConfig({
   timeout: 60000,
   use: {
     headless: process.env.HEADLESS === 'true',
-    screenshot: 'only-on-failure',
-    trace: 'on-first-retry',
-    baseURL: process.env.BASE_URL || 'https://www.google.com'
+    baseURL: process.env.BASE_URL || 'https://viewpoint.glasslewis.com/WD/?siteId=DemoClient'
   },
-  reporter: [['html', { outputFolder: 'test-results' }]],
-  projects: [
-    { name: 'Chromium', use: { browserName: 'chromium' } },
-    { name: 'Firefox', use: { browserName: 'firefox' } },
-    { name: 'WebKit', use: { browserName: 'webkit' } }
-  ]
+  reporter: [['html', { outputFolder: 'test-results' }]]
 });
