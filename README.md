@@ -1,6 +1,6 @@
-🚀 TypeScript + Playwright + Cucumber Test Automation
+# **🚀 TypeScript + Playwright + Cucumber Test Automation**
 
-📌 Project Overview
+## 📌 Project Overview
 
 This project is a test automation framework built using:
 
@@ -12,43 +12,53 @@ TypeScript: For type safety and better maintainability.
 
 It allows running tests in multiple browsers (Chromium, Firefox, WebKit) and supports dynamic configurations via .env.
 
-📦 Installation
+## 📦 Installation
 
-Ensure you have Node.js (v20 or later) installed. Then, run:
+Ensure you have Node.js (v20 or later) installed. Then, run:  
 
+```ts
 npm install
+```
 
 This installs all dependencies, including Playwright and Cucumber.
 
-To install Playwright browsers, run:
+To install Playwright browsers, run:  
 
+```ts
 npx playwright install
+```
 
-⚙️ Configuration
+## ⚙️ Configuration
 
 Environment Variables (.env)
 
-You can define test settings in a .env file:
+You can define test settings in a .env file:  
 
-BROWSER=chromium  # Options: chromium, firefox, webkit
-HEADLESS=true      # Run tests in headless mode
-BASE_URL=https://example.com
+```ts
+BROWSER=chromium  # Options: chromium, firefox, webkit  
+HEADLESS=true      # Run tests in headless mode  
+BASE_URL=https://example.com  # Replace with your URL
+```
 
-▶️ Running Tests
+## ▶️ Running Tests
 
-1. Run All Tests
+### 1. Run All Tests
 
+```ts
 npx cucumber-js
+```
 
-2. Run a Specific Feature File
+### 2. Run a Specific Feature File
 
-npx cucumber-js features/login.feature
+```ts
+npx cucumber-js features/filters.feature
+```
 
 
-📸 Capture Screenshots on Failure
+## 📸 Capture Screenshots on Failure
 
 Screenshots are saved in the screenshots/ folder.
 
-📊 Reports
+## 📊 Reports
 
 The test execution report is saved in test-results/ folder.
