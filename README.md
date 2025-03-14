@@ -28,7 +28,7 @@ To install Playwright browsers, run:
 npx playwright install
 ```
 
-⚙️ Configuration
+## ⚙️ Configuration
 
 Environment Variables (.env)
 
@@ -42,23 +42,23 @@ BASE_URL=https://example.com  # Replace with your URL
 
 ## ▶️ Running Tests
 
-1. Run All Tests
+### 1. Run All Tests
 
 ```ts
 npx cucumber-js
 ```
 
-2. Run a Specific Feature File
+### 2. Run a Specific Feature File
 
 ```ts
 npx cucumber-js features/filters.feature
 ```
 
 
-📸 Capture Screenshots on Failure
+## 📸 Capture Screenshots on Failure
 
 Screenshots are saved in the screenshots/ folder.
 
-📊 Reports
+## 📊 Reports
 
 The test execution report is saved in test-results/ folder.
