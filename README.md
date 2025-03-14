@@ -37,7 +37,7 @@ You can define test settings in a .env file:
 ```ts
 BROWSER=chromium  # Options: chromium, firefox, webkit  
 HEADLESS=true      # Run tests in headless mode  
-BASE_URL=https://example.com  
+BASE_URL=https://example.com  # Replace with your URL
 ```
 
 ## ▶️ Running Tests
